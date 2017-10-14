@@ -1,0 +1,37 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+/*	background-color: pink;*/
+}
+#profpic{
+	position: fixed;
+	bottom: -70px;
+	right: 0;
+	height: 350px;
+	z-index: 99 !important;
+}
+#logo{
+	position: absolute;
+	width: 350px;
+	top: 0;
+	left: 0;
+	margin-top: 20px;
+	margin-left: calc(50% - 175px);
+}
+canvas {
+  background: #000;
+  display: block;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+#center-update-thing{
+	background-color: rgba(255, 255, 255, 0.8);
+	width: 400px;
+	/*height: 400px;*/
+	padding: 20px;
+	text-align: center;
+	font-size: 22px;
+}
