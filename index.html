@@ -49,16 +49,45 @@
 		<div id="content-area">
 			<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6l0dBb3myulpXsGaNzIXtt&size=detail&theme=dark&show-count=0" width="200" height="56" scrolling="no" frameborder="0" style=" margin-top: 20px;" allowtransparency="true"></iframe>
 			<h1>Listen to "I've Fallen and I Can't Get Up"</h1>
-			<img src="falling.jpg">
+			<img style="width: 300px;" src="falling.jpg">
 			<div>
 			<iframe style="text-align: center;" src="https://open.spotify.com/embed/artist/6l0dBb3myulpXsGaNzIXtt" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>
 		</div>
+
+		<div style="opacity: 0;" id="rain" class="rain"></div>
+
+
 			
 		</div>
 
 		
 
-		
+		<script type="text/javascript">
+			var intervalId = "";
+
+			$(document).ready(function() {
+			  intervalId = setInterval("letItRain()",50);
+			  $('.rain-type').change(function() {
+			    clearInterval(intervalId);
+			    intervalId = setInterval("letItRain()", $(this).val());
+			  });
+			  $('.water').animate({
+			    bottom: "+=20px"
+			  }, 20000);
+			});
+
+			function letItRain() {
+			var wHeight = $(window).height();
+			  var x = Math.floor(Math.random() * parseInt($('body').css('width'))) + 1;
+			  $('.rain').append("<div class='drop' style='left: "+x+"px;'></div>");
+			  $('.drop').animate({
+			    top: wHeight + "px",
+			    left: "+=200px"
+			  }, 1000, function() {
+			    $(this).remove();
+			  });
+			}
+		</script>
 
 		<script type="text/javascript">
 			$( document ).ready(function () {
@@ -90,6 +119,7 @@
 				$("#palmtree-set2").css({"right": 0 - scrollTop});
 
 				$("#c").css({"opacity": 0.6 - ($(document).scrollTop() * 0.0015)});
+				$("#rain").css({"opacity": 0 + ($(document).scrollTop() * 0.0015)});
 			});
 		</script>
 

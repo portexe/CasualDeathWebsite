@@ -28,7 +28,7 @@ canvas {
   display: block;
   height: 100%;
   width: 100%;
-  opacity: 0.6;
+  opacity: 0.4;
 }
 #center-update-thing{
 	background-color: rgba(255, 255, 255, 0.8);
@@ -95,6 +95,21 @@ canvas {
 	text-align: center;
 	z-index: 9999 !important;
 }
+.drop {
+  background-color: #02C0F8;
+  position: fixed;
+  display: block;
+  width: 10px;
+  height: 25px;
+  top: -15px;
+}
+.water {
+  height: 1000px;
+  width: 100%;
+  bottom: -1000px;
+  background-color: #02c0f8;
+  position: absolute;
+}
 @media screen and (min-width: 1px) and (max-width: 550px){
     #logo {
         margin-top: 18vh;
@@ -115,5 +130,11 @@ canvas {
 		border-radius: 50px;
 		cursor: pointer;
 		z-index: 99 !important;
+	}
+	#palmtree-set1{
+		display: none;
+	}
+	#palmtree-set2{
+		display: none;
 	}
 }​
