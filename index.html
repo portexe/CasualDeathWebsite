@@ -34,7 +34,7 @@
 			</div>
 		
 			<div id="bottom-of-header">
-				<img id="profpic" src="profpic-skeleton-only.png">
+				<div id="profpic-wrapper"><img id="profpic" src="profpic-skeleton-only.png"></div>
 				<div id="palmtree-set1">
 					<img class="palmtrees" src="palmtrees.png">
 					<img class="palmtrees-two" src="palmtrees.png">
@@ -95,8 +95,8 @@
 				var wHeight = $(window).height();
 				var lWidth  = $("#logo").width();
 				var pWidth  = $("#profpic").width();
-				//$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
-				//$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
+				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px", "display": "inline-block"});
+				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px", "display": "inline-block"});
 				console.log(wHeight);
 				//$("#content-area").css({"margin-top": wHeight + "px"});
 			});
@@ -105,8 +105,8 @@
 			    var wHeight = $(window).height();
 				var lWidth  = $("#logo").width();
 				var pWidth  = $("#profpic").width();
-				//$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
-				//$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
+				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px", "display": "inline-block"});
+				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px", "display": "inline-block"});
 
 				//$("#content-area").css({"margin-top": wHeight + "px"});
 			});
