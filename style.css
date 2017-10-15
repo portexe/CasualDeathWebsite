@@ -3,22 +3,22 @@ html,body{
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-/*	background-color: pink;*/
 }
 #profpic{
-	position: fixed;
-	bottom: -70px;
-	right: 0;
-	height: 350px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 300px;
 	z-index: 99 !important;
+	margin-left: calc(50% - 150px);
 }
 #logo{
 	position: absolute;
-	width: 350px;
+	width: 70%;
+	margin-left: 15%;
 	top: 0;
 	left: 0;
 	margin-top: 20px;
-	margin-left: calc(50% - 175px);
 }
 canvas {
   background: #000;
@@ -30,8 +30,58 @@ canvas {
 #center-update-thing{
 	background-color: rgba(255, 255, 255, 0.8);
 	width: 400px;
-	/*height: 400px;*/
 	padding: 20px;
 	text-align: center;
 	font-size: 22px;
+}
+.palmtrees{
+	position: absolute;
+	bottom: 0;
+}
+.palmtrees-two{
+	position: absolute;
+	bottom: 0;
+	margin-left: 350px;
+	width: 150px;
+	opacity: 0.5;
+}
+#palmtree-set1 .palmtrees-reverse{
+	position: absolute;
+	bottom: 0;
+	margin-left: 500px;
+}
+#palmtree-set2 .palmtrees-reverse{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#palmtree-set2 .palmtrees-two{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 350px;
+}
+#palmtree-set2{
+	right: 0;
+	position: absolute;
+}
+.head-of-site{
+	position: absolute;
+}
+#link-buttons{
+	position: absolute;
+	top: 0;
+	width: 70%;
+	margin-left: 15%;
+	text-align: center;
+}
+#link-buttons img{
+	margin: 5px;
+	width: 35px;
+	border-radius: 50px;
+	opacity: 0.8;
+	cursor: pointer;
+}
+.social-media-icon{
+	width: 50px;
 }
