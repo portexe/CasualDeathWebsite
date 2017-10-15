@@ -8,18 +8,20 @@ html,body{
 	position: absolute;
 	bottom: 0;
 	left: 0;
-	width: 300px;
+	max-width: 300px;
 	z-index: 99 !important;
-	margin-left: calc(50% - 150px);
+	/*margin-left: calc(50% - 150px);*/
+	max-height: 35%;
 }
 #logo{
 	position: absolute;
-	width: 70%;
-	margin-left: 15%;
+	max-width: 70%;
+	/*margin-left: 15%;*/
 	top: 0;
 	left: 0;
 	margin-top: 50px;
 	z-index: 50 !important;
+	max-height: 35%;
 }
 canvas {
   background: #000;
@@ -91,10 +93,14 @@ canvas {
         margin-top: 18vh;
         width: 80%;
         margin-left: 10%;
+        max-width: none;
+        max-height: none;
     }
     #profpic{
     	width: 55%;
     	margin-left: 22.5%;
+    	max-width: none;
+        max-height: none;
     }
     .social-media-icon{
 		margin-left: 1%;
