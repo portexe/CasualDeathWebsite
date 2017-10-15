@@ -114,10 +114,9 @@
 				var wHeight = $(window).height();
 				var scrollTop = $(window).scrollTop();
 				var opacity = 1 - (wHeight/scrollTop);
-				$("#profpic").css({"bottom": 0 - scrollTop});
+				$("#profpic").css({"bottom": 0 - scrollTop, "transition": "none"});
 				$("#palmtree-set1").css({"left": 0 - scrollTop});
 				$("#palmtree-set2").css({"right": 0 - scrollTop});
-
 				$("#c").css({"opacity": 0.6 - ($(document).scrollTop() * 0.0015)});
 				$("#rain").css({"opacity": 0 + ($(document).scrollTop() * 0.0015)});
 			});
