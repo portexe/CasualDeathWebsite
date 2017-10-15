@@ -2,7 +2,6 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 		 <script
 			src="https://code.jquery.com/jquery-2.2.4.min.js"
 			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -16,10 +15,10 @@
 		<title>Casual Death</title>
 	</head>
 	<body>
+		
 		<canvas id="c"></canvas>
-		<img id="profpic" src="profpic-skeleton-only.png">
-
 		<div id="head-of-site">
+			
 			<img id="logo" src="logo.png">
 			<div id="link-buttons">
 				<img class="social-media-icon" src="instagram-icon.png">
@@ -33,44 +32,64 @@
 				<img class="social-media-icon" src="tidal-icon.png">
 				<img class="social-media-icon" src="apple-music-icon.png">
 			</div>
+		
+			<div id="bottom-of-header">
+				<img id="profpic" src="profpic-skeleton-only.png">
+				<div id="palmtree-set1">
+					<img class="palmtrees" src="palmtrees.png">
+					<img class="palmtrees-two" src="palmtrees.png">
+				</div>
+				<div id="palmtree-set2">
+					<img class="palmtrees-two" src="palmtrees-reverse.png">
+					<img class="palmtrees-reverse" src="palmtrees-reverse.png">
+				</div>
+			</div>
 		</div>
 
-		<div id="palmtree-set1">
-			<img class="palmtrees" src="palmtrees.png">
-			<img class="palmtrees-two" src="palmtrees.png">
+		<div id="content-area">
+			<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6l0dBb3myulpXsGaNzIXtt&size=detail&theme=dark&show-count=0" width="200" height="56" scrolling="no" frameborder="0" style=" margin-top: 20px;" allowtransparency="true"></iframe>
+			<h1>Listen to "I've Fallen and I Can't Get Up"</h1>
+			<img src="falling.jpg">
+			<div>
+			<iframe style="text-align: center;" src="https://open.spotify.com/embed/artist/6l0dBb3myulpXsGaNzIXtt" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>
 		</div>
-		<div id="palmtree-set2">
-			<img class="palmtrees-two" src="palmtrees-reverse.png">
-			<img class="palmtrees-reverse" src="palmtrees-reverse.png">
+			
 		</div>
 
-		<!-- <div id="center-update-thing"> -->
-			<!-- <canvas id="c"></canvas> -->
-			<!-- <p>Bookmark this webpage to learn more about metaphysical audio-biology of the medical field, bitch lasagna.</p>
-		</div> -->
+		
 
-		<!-- <video style="position: absolute; opacity: 0.2; width: 100%;" width="100%" height="100%" autoplay="true">
-  			<source src="smoke.webm" type="video/mp4">
-		</video> -->
-
-		<!-- <iframe style="position: absolute; top: 0; left: 0; margin-left: 20px; margin-top: 140px;" src="https://open.spotify.com/embed/artist/6l0dBb3myulpXsGaNzIXtt" width="300" height="400" frameborder="0" allowtransparency="true"></iframe> -->
-
-		<!-- <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6l0dBb3myulpXsGaNzIXtt&size=detail&theme=dark&show-count=0" width="200" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden; position: absolute; top: 0; right: 0; margin-top: 20px;" allowtransparency="true"></iframe> -->
+		
 
 		<script type="text/javascript">
 			$( document ).ready(function () {
-				var wWidth = $(window).width();
-				var lWidth = $("#logo").width();
-				var pWidth = $("#profpic").width();
+				var wWidth  = $(window).width();
+				var wHeight = $(window).height();
+				var lWidth  = $("#logo").width();
+				var pWidth  = $("#profpic").width();
 				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
 				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
+				console.log(wHeight);
+				//$("#content-area").css({"margin-top": wHeight + "px"});
 			});
 			$(window).resize(function(){
-			    var wWidth = $(window).width();
-				var lWidth = $("#logo").width();
-				var pWidth = $("#profpic").width();
+			    var wWidth  = $(window).width();
+			    var wHeight = $(window).height();
+				var lWidth  = $("#logo").width();
+				var pWidth  = $("#profpic").width();
 				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
 				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
+
+				//$("#content-area").css({"margin-top": wHeight + "px"});
+			});
+			$(window).scroll(function() {
+				var wHeight = $(window).height();
+				var scrollTop = $(window).scrollTop();
+				var opacity = 1 - (wHeight/scrollTop);
+				$("#profpic").css({"bottom": 0 - scrollTop});
+				$("#palmtree-set1").css({"left": 0 - scrollTop});
+				$("#palmtree-set2").css({"right": 0 - scrollTop});
+
+				$("#c").css({"opacity": 0.6 - ($(document).scrollTop() * 0.0015)});
 			});
 		</script>
 
@@ -96,7 +115,7 @@
 
 			  ctx = c.getContext('2d');
 
-			  divider = 4;
+			  divider = 12;
 
 			  cw = c.width = window.innerWidth / divider;
 
@@ -112,7 +131,6 @@
 
 			  rand = function(min, max) {
 			    return Math.floor((Math.random() * (max - min + 1)) + min);
-			    //return 60;
 			  };
 			  Blip = function(x, y) {
 			    this.x = x;
@@ -141,7 +159,7 @@
 			  };
 			  clear = function() {
 			    ctx.globalCompositeOperation = 'destination-out';
-			    ctx.fillStyle = 'hsla(0, 0%, 0%, .05)';
+			    ctx.fillStyle = 'hsla(0, 0%, 0%, .01)';
 			    ctx.fillRect(0, 0, cw, ch);
 			    return ctx.globalCompositeOperation = 'lighter';
 			  };
@@ -172,5 +190,7 @@
 			  run();
 			}).call(this);
 		</script>
+
+
 	</body>
 </html>
