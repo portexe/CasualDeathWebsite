@@ -66,7 +66,7 @@
 			var intervalId = "";
 
 			$(document).ready(function() {
-			  intervalId = setInterval("letItRain()",50);
+			  intervalId = setInterval("letItRain()",150);
 			  $('.rain-type').change(function() {
 			    clearInterval(intervalId);
 			    intervalId = setInterval("letItRain()", $(this).val());
@@ -95,8 +95,8 @@
 				var wHeight = $(window).height();
 				var lWidth  = $("#logo").width();
 				var pWidth  = $("#profpic").width();
-				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
-				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
+				//$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
+				//$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
 				console.log(wHeight);
 				//$("#content-area").css({"margin-top": wHeight + "px"});
 			});
@@ -105,8 +105,8 @@
 			    var wHeight = $(window).height();
 				var lWidth  = $("#logo").width();
 				var pWidth  = $("#profpic").width();
-				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
-				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
+				//$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px"});
+				//$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px"});
 
 				//$("#content-area").css({"margin-top": wHeight + "px"});
 			});

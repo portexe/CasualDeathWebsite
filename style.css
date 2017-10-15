@@ -104,20 +104,24 @@ canvas {
 	position: relative;
 }
 .drop {
-  background-color: #02C0F8;
-  position: fixed;
-  display: block;
-  width: 10px;
-  height: 25px;
-  top: -15px;
-  z-index: 10 !important;
+	background-color: #02C0F8;
+	position: fixed;
+	display: block;
+	width: 6px;
+	height: 25px;
+	top: -15px;
+	z-index: 10 !important;
+	border-radius: 5px;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
 }
 .water {
-  height: 1000px;
-  width: 100%;
-  bottom: -1000px;
-  background-color: #02c0f8;
-  position: absolute;
+	height: 1000px;
+	width: 100%;
+	bottom: -1000px;
+	background-color: #02c0f8;
+	position: absolute;
 }
 @media screen and (min-width: 1px) and (max-width: 550px){
     #logo {
