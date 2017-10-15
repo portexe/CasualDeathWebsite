@@ -1,0 +1,18 @@
+@media screen and (min-width: 551px) and (max-width: 700px){
+    #logo {
+        margin-top: 18vh;
+        width: 80%;
+        margin-left: 10%;
+    }
+    #profpic{
+    	width: 45%;
+    	margin-left: 27.5%;
+    }
+    .social-media-icon{
+		margin-left: 1%;
+		width: 10%;
+		border-radius: 50px;
+		cursor: pointer;
+		z-index: 99 !important;
+	}
+}​
