@@ -7,6 +7,15 @@ html,body{
 	margin: 0px;
 	font-family: 'Oxygen', sans-serif;
 }
+#app{
+	visibility: hidden;
+}
+#loading{
+	position: absolute;
+	top: 0;
+	text-align: center;
+	width: 100%;
+}
 #profpic{
 	position: fixed;
 	bottom: 0;
