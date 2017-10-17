@@ -13,7 +13,7 @@
 			crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="stylesheet" type="text/css" href="stubborn-styles.css">
-		<title>Casual Death v2</title>
+		<title>Casual Death</title>
 	</head>
 	<body>
 		
@@ -107,15 +107,17 @@
 
 		<script type="text/javascript">
 			$( window ).load(function () {
-				$("#loading").css({"display": "none"});
-				$("#app").css({"visibility":"visible"});
-				var wWidth  = $(window).width();
-				var wHeight = $(window).height();
-				var lWidth  = $("#logo").width();
-				var pWidth  = $("#profpic").width();
-				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px", "visibility": "visible"});
-				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px", "visibility": "visible"});
-				console.log(wHeight);
+				$("#loading").animate({"opacity": 0}, "slow", function() {
+					$("#loading").css({"display": "none"});
+					$("#app").css({"visibility":"visible"});
+					var wWidth  = $(window).width();
+					var wHeight = $(window).height();
+					var lWidth  = $("#logo").width();
+					var pWidth  = $("#profpic").width();
+					$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px", "visibility": "visible"});
+					$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px", "visibility": "visible"});
+				});
+				
 				//$("#content-area").css({"margin-top": wHeight + "px"});
 			});
 			$(window).resize(function(){
