@@ -139,6 +139,13 @@ canvas {
 	background-color: #02c0f8;
 	position: absolute;
 }
+#credits{
+	width: 300px;
+	margin-top: 20px;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
 @media screen and (min-width: 1px) and (max-width: 550px){
     #logo {
         margin-top: 18vh;
