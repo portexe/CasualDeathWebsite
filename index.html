@@ -18,7 +18,10 @@
 	<body>
 		
 		<span id="app">
+
 		<canvas id="c"></canvas>
+		<div id="block-top"></div>
+
 		<div id="head-of-site">
 			<img id="logo" src="logo.png">
 			<div id="link-buttons">
@@ -78,7 +81,7 @@
 
 	<div id="credits">
 		<span id="neff-credits"><h4>Skeleton Artwork by: <a href="https://www.facebook.com/ALPHAOASIS/" target="_blank">Neff</a></h4></span>
-		<span id="zack-credits"><h4>Website Developed by: <a href="">Zack Wilson</a></h4></span>
+		<span id="zack-credits"><h4>Website Developed by: <a href="https://www.instagram.com/zackazt/">Zack Wilson</a></h4></span>
 	</div>
 
 		
@@ -121,6 +124,8 @@
 					var pWidth  = $("#profpic").width();
 					$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px", "visibility": "visible"});
 					$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px", "visibility": "visible"});
+
+					$(document).scrollTop(0);
 				});
 				
 				//$("#content-area").css({"margin-top": wHeight + "px"});
@@ -142,7 +147,24 @@
 				$("#profpic").css({"bottom": 0 - scrollTop, "transition": "none"});
 				$("#palmtree-set1").css({"left": 0 - scrollTop});
 				$("#palmtree-set2").css({"right": 0 - scrollTop});
-				$("#c").css({"opacity": 0.6 - ($(document).scrollTop() * 0.0015)});
+
+				var val = $(document).scrollTop() * 0.0015;
+				
+
+				
+
+				//$("#c").css({"opacity": 0.6 - val}) ? val <= 0.2 : $("#c").css({"opacity": 0.2});
+
+				if(val <= 0.6){
+					var newVal = 0.8 - val;
+					console.log(newVal);
+					$("#c").css({"opacity": newVal + ""})
+				}
+
+
+				
+				
+
 				$("#rain").css({"opacity": 0 + ($(document).scrollTop() * 0.0015)});
 			});
 		</script>
