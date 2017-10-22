@@ -22,7 +22,6 @@ html,body{
 	left: 0;
 	max-width: 300px;
 	z-index: 99999 !important;
-	/*margin-left: calc(50% - 150px);*/
 	max-height: 35%;
 	visibility: hidden;
 	transition: 0.3s;
@@ -151,6 +150,7 @@ canvas {
 	text-align: center;
 	margin: auto;
 	margin-bottom: 50px;
+	display: block;
 }
 @media screen and (min-width: 1px) and (max-width: 550px){
     #logo {
@@ -168,7 +168,7 @@ canvas {
     }
     .social-media-icon{
 		margin-left: 1%;
-		width: 15%;
+		width: 10%;
 		border-radius: 50px;
 		cursor: pointer;
 		z-index: 99 !important;
