@@ -52,7 +52,7 @@
 
 		<div id="content-area">
 			<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6l0dBb3myulpXsGaNzIXtt&size=detail&theme=dark&show-count=0" width="200" height="56" scrolling="no" frameborder="0" style=" margin-top: 20px;" allowtransparency="true"></iframe>
-			<h1>Listen to "I've Fallen and I Can't Get Up"</h1>
+			<h1 id="feature-header">Listen to "I've Fallen and I Can't Get Up"</h1>
 			<img id="album-art" style="width: 300px;" src="falling.jpg">
 			<div>
 			<iframe style="text-align: center;" src="https://open.spotify.com/embed/artist/6l0dBb3myulpXsGaNzIXtt" width="300" height="400" frameborder="0" allowtransparency="true"></iframe>
@@ -149,28 +149,19 @@
 				$("#palmtree-set2").css({"right": 0 - scrollTop});
 
 				var val = $(document).scrollTop() * 0.0015;
-				
-
-				
-
-				//$("#c").css({"opacity": 0.6 - val}) ? val <= 0.2 : $("#c").css({"opacity": 0.2});
 
 				if(val <= 0.6){
 					var newVal = 0.8 - val;
 					console.log(newVal);
 					$("#c").css({"opacity": newVal + ""})
 				}
-
-
-				
-				
-
 				$("#rain").css({"opacity": 0 + ($(document).scrollTop() * 0.0015)});
 			});
 		</script>
 
 		<script type="text/javascript">
-			var colors = ["#9c51ba", "#ff62ff", "#ebd527", "#17e4f7", "#cba2c0"]
+			var colors = ["#9c51ba", "#ff62ff", "#ebd527", "#17e4f7", "#cba2c0"];
+			var colorsText = ["#99ffc3", "#00d9ff", "#ffbaea", "#f531f6", "#71f4ff"];
 			var i = 0;
 			$("body").css("background-color","#cba2c0");
 			function changeColor()
@@ -180,31 +171,29 @@
 			    $("body").animate({backgroundColor: colors[i]},5000);
 			    setTimeout(changeColor,0);
 			}
+			function changeColorText()
+			{
+			    i++;
+			    i=i%5;
+			    $("#feature-header").animate({color: colorsText[i]},5000);
+			    setTimeout(changeColor,0);
+			}
 			$( document ).ready(changeColor());
+			$( document ).ready(changeColorText());
 		</script>
 
 		<script type="text/javascript">
 			(function() {
 			  var Blip, blips, c, ch, clear, ctx, cw, divider, globalTick, initialBlips, pi2, rand, run;
-
 			  c = document.getElementById('c');
-
 			  ctx = c.getContext('2d');
-
 			  divider = 12;
-
 			  cw = c.width = window.innerWidth / divider;
-
 			  ch = c.height = window.innerHeight / divider;
-
 			  pi2 = Math.PI * 2;
-
 			  blips = [];
-
 			  initialBlips = 30;
-
 			  globalTick = 0;
-
 			  rand = function(min, max) {
 			    return Math.floor((Math.random() * (max - min + 1)) + min);
 			  };
