@@ -72,6 +72,9 @@ canvas {
 	width: 150px;
 	opacity: 0.5;
 }
+#feature-header{
+	color: black;
+}
 #palmtree-set1 .palmtrees-reverse{
 	position: absolute;
 	bottom: 0;
