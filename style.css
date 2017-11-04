@@ -186,10 +186,12 @@ canvas {
 	#palmtree-set1 img{
 		/*display: none;*/
 		width: 80px;
+		bottom: 0;
 	}
 	#palmtree-set2 img{
 		/*display: none;*/
 		width: 80px;
+		bottom: 0;
 	}
 /*	.palmtrees{
 		display: block;
