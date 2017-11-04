@@ -183,12 +183,20 @@ canvas {
 		cursor: pointer;
 		z-index: 99 !important;
 	}
-	#palmtree-set1{
-		display: none;
+	#palmtree-set1 img{
+		/*display: none;*/
+		width: 80px;
 	}
-	#palmtree-set2{
-		display: none;
+	#palmtree-set2 img{
+		/*display: none;*/
+		width: 80px;
 	}
+/*	.palmtrees{
+		display: block;
+	}
+	.palmtrees-reverse{
+		display: block;
+	}*/
 	.drop {
 	  background-color: #02C0F8;
 	  position: fixed;
