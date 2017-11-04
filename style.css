@@ -74,6 +74,7 @@ canvas {
 }
 #feature-header{
 	color: black;
+	font-size: 1.5vw;
 }
 #palmtree-set1 .palmtrees-reverse{
 	position: absolute;
@@ -195,4 +196,7 @@ canvas {
 	  width: 5px;
 	  height: 15px;
 	}
+	#feature-header{
+        font-size: 3.8vw;
+    }
 }​
