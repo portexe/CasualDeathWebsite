@@ -103,6 +103,7 @@ canvas {
 	width: 70%;
 	margin-left: 15%;
 	text-align: center;
+	z-index: 9999999 !important;
 }
 #link-buttons img{
 	z-index: 99 !important;
