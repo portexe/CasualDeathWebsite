@@ -39,12 +39,12 @@
 			<div id="bottom-of-header">
 				<div id="profpic-wrapper"><img id="profpic" src="profpic-skeleton-only.png" alt="Casual Death skeleton"></div>
 				<div id="palmtree-set1">
-					<!-- <img class="palmtrees" src="palmtrees.png"> -->
-<!-- 					<img class="palmtrees-two" src="palmtrees.png"> -->
+					<img class="palmtrees" src="palmtrees.png">
+     				<img class="palmtrees-two" src="palmtrees.png">
 				</div>
 				<div id="palmtree-set2">
-<!-- 					<img class="palmtrees-two" src="palmtrees-reverse.png"> -->
-					<!-- <img class="palmtrees-reverse" src="palmtrees-reverse.png"> -->
+					<img class="palmtrees-two" src="palmtrees-reverse.png">
+					<img class="palmtrees-reverse" src="palmtrees-reverse.png">
 				</div>
 			</div>
 		</div>
@@ -86,6 +86,9 @@
 			<h4>Website Developed by: <a href="https://www.instagram.com/zackazt/">Zack Wilson</a></h4>
 		</span>
 	</div>
+
+	<img id="vaporwave" src="vaporwave.jpg" style="bottom: 0px; min-width: 100%; min-height: 100%; opacity: 0.35; position: fixed;">
+	<!-- Credit for this image goes to: DavidFigueira at DeviantArt -->
 
 		<script type="text/javascript">
 			var intervalId = "";
@@ -148,6 +151,7 @@
 				var wHeight = $(window).height();
 				var scrollTop = $(window).scrollTop();
 				var opacity = 1 - (wHeight/scrollTop);
+				
 				$("#profpic").css({"bottom": 0 - scrollTop, "transition": "none"});
 				$("#palmtree-set1").css({"left": 0 - scrollTop});
 				$("#palmtree-set2").css({"right": 0 - scrollTop});
