@@ -6,6 +6,11 @@ html,body{
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Press Start 2P', cursive;
+	background-image: url("vaporwave.jpg");
+	background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center top;
+    background-attachment: fixed;
 }
 #app{
 
