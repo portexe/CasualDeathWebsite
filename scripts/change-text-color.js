@@ -13,6 +13,7 @@ function changeColorText(){
     i++;
     i=i%5;
     $("#feature-header").animate({color: colorsText[i]},5000);
+    $(".toolbar-link-anchor").animate({color: colorsText[i]},5000);
     setTimeout(changeColorText,0);
 }
 // $( document ).ready(changeColor());
