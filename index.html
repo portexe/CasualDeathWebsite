@@ -16,29 +16,13 @@
 			integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
 			crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/stubborn-styles.css">
 		<title>Casual Death - Make Your Casual Death A Reality</title>
 	</head>
 	<body>
 		<!-- Website Developed by Zack Wilson: www.portexe.com | Instagram: @port.exe | Twitter: @portexe -->
 		<span id="app">
-            <canvas id="c" style="opacity: 0.8;"></canvas>
-            <div id="block-top"></div>
-            <div id="head-of-site">
+            <div id="header">
                 <img id="logo" src="img/logo.png" alt="Casual Death logo">
-                <div id="bottom-of-header">
-                    <div id="profpic-wrapper"><img id="profpic" src="img/profpic-skeleton-only.png" alt="Casual Death skeleton"></div>
-                    <div id="palmtree-set1">
-                        <img class="palmtrees" src="img/palmtrees.png">
-                        <img class="palmtrees-two" src="img/palmtrees.png">
-                    </div>
-                    <div id="palmtree-set2">
-                        <img class="palmtrees-two" src="img/palmtrees-reverse.png">
-                        <img class="palmtrees-reverse" src="img/palmtrees-reverse.png">
-                    </div>
-                </div>
-            </div>
-            <div id="content-area">
                 <div id="link-buttons">
                     <a href="https://www.instagram.com/csl_dth/" target="_blank"><img class="social-media-icon" src="icons/instagram-icon.png" alt="Casual Death Instagram"></a>
                     <a href="https://www.facebook.com/CasualDeath/" target="_blank"><img class="social-media-icon" src="icons/facebook-icon.png" alt="Casual Death Facebook"></a>
@@ -53,6 +37,25 @@
                     <a href="https://www.youtube.com/channel/UCVILIRvXlSAENLBrDVDOJTA" target="_blank"><img class="social-media-icon" src="icons/youtube-icon.png" alt="Casual Death Youtube"></a>
                     <a href="https://casualdeath.bandcamp.com/" target="_blank"><img class="social-media-icon" src="icons/bandcamp-icon.png" alt="Casual Death Bandcamp"></a>
                 </div>
+            </div>
+        
+            <canvas id="c" style="opacity: 0.8;"></canvas>
+            <div id="block-top"></div>
+            <div id="head-of-site">
+                <div id="bottom-of-header">
+                    <div id="profpic-wrapper"><img id="profpic" src="img/profpic-skeleton-only.png" alt="Casual Death skeleton"></div>
+                    <div id="palmtree-set-left">
+                        <img class="palmtrees" src="img/palmtrees.png">
+                        <img class="palmtrees-small" src="img/palmtrees.png">
+                    </div>
+                    <div id="palmtree-set-right">
+                        <img class="palmtrees-small" src="img/palmtrees-reverse.png">
+                        <img class="palmtrees-reverse" src="img/palmtrees-reverse.png">
+                    </div>
+                </div>
+            </div>
+            <div id="content-area">
+                
                 <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6l0dBb3myulpXsGaNzIXtt&size=detail&theme=dark&show-count=0" width="200" height="56" scrolling="no" frameborder="0" style=" margin-top: 20px; margin-bottom: 20px;" allowtransparency="true"></iframe>
                 <div>
                     <iframe src="https://open.spotify.com/embed/artist/6l0dBb3myulpXsGaNzIXtt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
@@ -68,6 +71,7 @@
 		<script src="scripts/rain.js"></script>
 		<script src="scripts/scroll-animator.js"></script>
 		<script src="scripts/change-text-color.js"></script>
-		<script src="scripts/color-cloud.js"></script>
+        <script src="scripts/color-cloud.js"></script>
+        <script src="scripts/palm-tree-position.js"></script>
 	</body>
 </html>

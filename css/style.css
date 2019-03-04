@@ -12,6 +12,10 @@ html,body{
     background-position: center top;
     background-attachment: fixed;
 }
+#header {
+    z-index: 10;
+    position: relative;
+}
 #loading{
 	position: absolute;
 	top: 0;
@@ -30,13 +34,12 @@ html,body{
 }
 
 #logo{
-	position: absolute;
+    width: 300px;
 	max-width: 70%;
 	visibility: hidden;
 	transition: 0.3s;
 	top: 0;
 	left: 0;
-	margin-top: 50px;
 	z-index: 50 !important;
 	max-height: 35%;
 }
@@ -47,6 +50,8 @@ canvas {
     width: 100%;
     opacity: 0.4;
     position: fixed;
+    top: 0;
+    z-index: 0;
 }
 #block-top{
     display: block;
@@ -62,12 +67,21 @@ canvas {
 }
 .palmtrees{
 	position: absolute;
-	bottom: 0;
+    bottom: 0;
+    height: 200px;
+    width: auto;
 }
-#palmtree-set1{
-	position: fixed;
+.palmtrees-reverse{
+	position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: auto;
 }
-.palmtrees-two{
+#palmtree-set-left{
+    position: fixed;
+    bottom: 0;
+}
+.palmtrees-small{
 	position: absolute;
 	bottom: 0;
 	margin-left: 350px;
@@ -78,29 +92,29 @@ canvas {
 	color: black;
 	font-size: 1.5vw;
 }
-#palmtree-set1 .palmtrees-reverse{
+#palmtree-set-left .palmtrees-reverse{
 	position: absolute;
 	bottom: 0;
 	margin-left: 500px;
 }
-#palmtree-set2 .palmtrees-reverse{
+#palmtree-set-right .palmtrees-reverse{
 	position: absolute;
 	bottom: 0;
 	right: 0;
 }
-#palmtree-set2 .palmtrees-two{
+#palmtree-set-right .palmtrees-small{
 	position: absolute;
 	bottom: 0;
 	right: 0;
 	margin-right: 350px;
 }
-#palmtree-set2{
+#palmtree-set-right{
 	right: 0;
-	position: fixed;
+    position: fixed;
+    bottom: 0;
 }
 
 #link-buttons{
-	position: absolute;
 	top: 0;
 	width: 70%;
 	margin-left: 15%;
@@ -186,16 +200,9 @@ canvas {
 		cursor: pointer;
 		z-index: 99 !important;
 	}
-	#palmtree-set1 img{
-		/*display: none;*/
-		width: 80px;
-		bottom: 0;
-	}
-	#palmtree-set2 img{
-		/*display: none;*/
-		width: 80px;
-		bottom: 0;
-	}
+    .palmtrees-small {
+        display: none;
+    }
 /*	.palmtrees{
 		display: block;
 	}
@@ -212,4 +219,18 @@ canvas {
 	#feature-header{
         font-size: 3.8vw;
     }
+}
+@media screen and (min-height: 1px) and (max-height: 380px){ 
+    #profpic {
+        display: none;
+    }
+    .palmtrees-small {
+        display: none;
+    }
+    /* #palmtree-set-right {
+        display: none;
+    }
+    #palmtree-set-left {
+        display: none;
+    } */
 }
