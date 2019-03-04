@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Website Developed by Zack Wilson www.zackazt.com -->
+        <!-- Website Developed by Zack Wilson www.portexe.com -->
+        <!-- Credit for the background image goes to: DavidFigueira at DeviantArt -->
 		<link rel="icon" type="image/x-icon" href="favicon.ICO">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="I came here to kick bass and hit snares and Im all out of spaghetti.">
@@ -14,234 +15,59 @@
 			src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
 			integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
 			crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<link rel="stylesheet" type="text/css" href="stubborn-styles.css">
-		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/stubborn-styles.css">
 		<title>Casual Death - Make Your Casual Death A Reality</title>
 	</head>
 	<body>
-		<!-- Website Developed by Zack Wilson: www.zackazt.com | Instagram: @port.exe | Twitter: @portexe -->
+		<!-- Website Developed by Zack Wilson: www.portexe.com | Instagram: @port.exe | Twitter: @portexe -->
 		<span id="app">
             <canvas id="c" style="opacity: 0.8;"></canvas>
             <div id="block-top"></div>
             <div id="head-of-site">
-                <img id="logo" src="logo.png" alt="Casual Death logo">
+                <img id="logo" src="img/logo.png" alt="Casual Death logo">
                 <div id="bottom-of-header">
-                    <div id="profpic-wrapper"><img id="profpic" src="profpic-skeleton-only.png" alt="Casual Death skeleton"></div>
+                    <div id="profpic-wrapper"><img id="profpic" src="img/profpic-skeleton-only.png" alt="Casual Death skeleton"></div>
                     <div id="palmtree-set1">
-                        <img class="palmtrees" src="palmtrees.png">
-                        <img class="palmtrees-two" src="palmtrees.png">
+                        <img class="palmtrees" src="img/palmtrees.png">
+                        <img class="palmtrees-two" src="img/palmtrees.png">
                     </div>
                     <div id="palmtree-set2">
-                        <img class="palmtrees-two" src="palmtrees-reverse.png">
-                        <img class="palmtrees-reverse" src="palmtrees-reverse.png">
+                        <img class="palmtrees-two" src="img/palmtrees-reverse.png">
+                        <img class="palmtrees-reverse" src="img/palmtrees-reverse.png">
                     </div>
                 </div>
             </div>
-
             <div id="content-area">
                 <div id="link-buttons">
-                    <a href="https://www.instagram.com/csl_dth/" target="_blank"><img class="social-media-icon" src="instagram-icon.png" alt="Casual Death Instagram"></a>
-                    <a href="https://www.facebook.com/CasualDeath/" target="_blank"><img class="social-media-icon" src="facebook-icon.png" alt="Casual Death Facebook"></a>
-                    <a href="https://twitter.com/CSL_DTH" target="_blank"><img class="social-media-icon" src="twitter-icon.png" alt="Casual Death Twitter"></a>
-                    <a href="https://itunes.apple.com/us/album/casual-death/id1298931230?uo=4&app=itunes&at=1001lry3&ct=dashboard" target="_blank"><img class="social-media-icon" src="itunes-icon.png" alt="Casual Death iTunes"></a>
-                    <a href="https://soundcloud.com/casualdeath" target="_blank"><img class="social-media-icon" src="soundcloud-icon.ico" alt="Casual Death Soundcloud"></a>
-                    <a href="https://play.google.com/store/music/album/Casual_Death_Casual_Death?id=B2a2uuuegc2lju3j7hefbjo3xne" target="_blank"><img class="social-media-icon" src="google-play-icon.png" alt="Casual Death Google Play"></a>
-                    <a href="https://open.spotify.com/album/4g3V8Z9WhpF8U3gTdEft1v" target="_blank"><img class="social-media-icon" src="spotify-icon.png" alt="Casual Death Spotify"></a>
+                    <a href="https://www.instagram.com/csl_dth/" target="_blank"><img class="social-media-icon" src="icons/instagram-icon.png" alt="Casual Death Instagram"></a>
+                    <a href="https://www.facebook.com/CasualDeath/" target="_blank"><img class="social-media-icon" src="icons/facebook-icon.png" alt="Casual Death Facebook"></a>
+                    <a href="https://twitter.com/CSL_DTH" target="_blank"><img class="social-media-icon" src="icons/twitter-icon.png" alt="Casual Death Twitter"></a>
+                    <a href="https://itunes.apple.com/us/album/casual-death/id1298931230?uo=4&app=itunes&at=1001lry3&ct=dashboard" target="_blank"><img class="social-media-icon" src="icons/itunes-icon.png" alt="Casual Death iTunes"></a>
+                    <a href="https://soundcloud.com/casualdeath" target="_blank"><img class="social-media-icon" src="icons/soundcloud-icon.ico" alt="Casual Death Soundcloud"></a>
+                    <a href="https://play.google.com/store/music/album/Casual_Death_Casual_Death?id=B2a2uuuegc2lju3j7hefbjo3xne" target="_blank"><img class="social-media-icon" src="icons/google-play-icon.png" alt="Casual Death Google Play"></a>
+                    <a href="https://open.spotify.com/album/4g3V8Z9WhpF8U3gTdEft1v" target="_blank"><img class="social-media-icon" src="icons/spotify-icon.png" alt="Casual Death Spotify"></a>
                     <a href="https://www.amazon.com/Casual-Death/dp/B076M66WPM/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1509414881&sr=1-1-mp3-albums-bar-strip-0&keywords=casual+death"></a>
-                    <a href="https://tidal.com/track/79743158" target="_blank"><img class="social-media-icon" src="tidal-icon.png" alt="Casual Death Tidal"></a>
-                    <a href="https://itunes.apple.com/us/album/casual-death/id1298931230?uo=4&app=music&at=1001lry3&ct=dashboard" target="_blank"><img class="social-media-icon" src="apple-music-icon.png" alt="Casual Death Apple Music"></a>
-                    <a href="https://www.youtube.com/channel/UCVILIRvXlSAENLBrDVDOJTA" target="_blank"><img class="social-media-icon" src="youtube-icon.png" alt="Casual Death Youtube"></a>
-                    <a href="https://casualdeath.bandcamp.com/" target="_blank"><img class="social-media-icon" src="bandcamp-icon.png" alt="Casual Death Bandcamp"></a>
+                    <a href="https://tidal.com/track/79743158" target="_blank"><img class="social-media-icon" src="icons/tidal-icon.png" alt="Casual Death Tidal"></a>
+                    <a href="https://itunes.apple.com/us/album/casual-death/id1298931230?uo=4&app=music&at=1001lry3&ct=dashboard" target="_blank"><img class="social-media-icon" src="icons/apple-music-icon.png" alt="Casual Death Apple Music"></a>
+                    <a href="https://www.youtube.com/channel/UCVILIRvXlSAENLBrDVDOJTA" target="_blank"><img class="social-media-icon" src="icons/youtube-icon.png" alt="Casual Death Youtube"></a>
+                    <a href="https://casualdeath.bandcamp.com/" target="_blank"><img class="social-media-icon" src="icons/bandcamp-icon.png" alt="Casual Death Bandcamp"></a>
                 </div>
-
                 <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:6l0dBb3myulpXsGaNzIXtt&size=detail&theme=dark&show-count=0" width="200" height="56" scrolling="no" frameborder="0" style=" margin-top: 20px; margin-bottom: 20px;" allowtransparency="true"></iframe>
                 <div>
-                    <iframe src="https://open.spotify.com/embed/album/0fVlNglEzaAKuffSQxr3DC"  width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                    <iframe src="https://open.spotify.com/embed/artist/6l0dBb3myulpXsGaNzIXtt" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </div>
-                
                 <div style="width: 100%; text-align: center;">
                     <h1>Contact: </h1>
                     <h4>casualdeathofficial@gmail.com</h4>
                 </div>
-
                 <div style="opacity: 0;" id="rain" class="rain"></div>
             </div>
 	    </span>
-
 	    <div id="loading"></div>
-
-        <!-- <img id="vaporwave" src="vaporwave.jpg" style="bottom: 0px; min-width: 100%; min-height: 100%; opacity: 0.35; position: fixed;"> -->
-        <!-- Credit for this image goes to: DavidFigueira at DeviantArt -->
-
-		<script type="text/javascript">
-			var intervalId = "";
-
-			$(document).ready(function() {
-			  intervalId = setInterval("letItRain()",150);
-			  $('.rain-type').change(function() {
-			    clearInterval(intervalId);
-			    intervalId = setInterval("letItRain()", $(this).val());
-			  });
-			  $('.water').animate({
-			    bottom: "+=20px"
-			  }, 20000);
-			});
-
-			function letItRain() {
-			var wHeight = $(window).height();
-			  var x = Math.floor(Math.random() * parseInt($('body').css('width'))) + 1;
-			  $('.rain').append("<div class='drop' style='left: "+x+"px;'></div>");
-			  $('.drop').animate({
-			    top: wHeight + "px",
-			    left: "+=200px"
-			  }, 1000, function() {
-			    $(this).remove();
-			  });
-			}
-        </script>
-
-		<script type="text/javascript">
-			$( window ).load(function () {
-				$("#loading").animate({"opacity": 0}, "slow", function() {
-					var wWidth  = $(window).width();
-					var wHeight = $(window).height();
-					var lWidth  = $("#logo").width();
-					var pWidth  = $("#profpic").width();
-					var logoTop = $("#logo").css("marginTop");
-					logoTop = Number.parseInt(logoTop) + 30 + "px";
-					var logoHeight = $("#logo").height();
-					$("#album-playlist").css({"margin-top": logoTop});
-					$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px", "visibility": "visible"});
-					$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px", "visibility": "visible"});
-
-					$(document).scrollTop(0);
-				});
-				
-			});
-			$(window).resize(function(){
-			    var wWidth  = $(window).width();
-			    var wHeight = $(window).height();
-				var lWidth  = $("#logo").width();
-				var pWidth  = $("#profpic").width();
-				$("#logo").css({"margin-left": (wWidth/2) - (lWidth/2) + "px", "visibility": "visible"});
-				$("#profpic").css({"margin-left": (wWidth/2) - (pWidth/2) + "px", "visibility": "visible"});
-
-			});
-			$(window).scroll(function() {
-				var wHeight = $(window).height();
-				var scrollTop = $(window).scrollTop();
-				var opacity = 1 - (wHeight/scrollTop);
-				
-				$("#profpic").css({"bottom": 0 - scrollTop, "transition": "none"});
-				$("#palmtree-set1").css({"left": 0 - scrollTop});
-				$("#palmtree-set2").css({"right": 0 - scrollTop});
-
-				var val = $(document).scrollTop() * 0.0015;
-
-				if(val <= 0.6){
-					var newVal = 0.8 - val;
-					$("#c").css({"opacity": newVal + ""});
-				}
-				$("#rain").css({"opacity": 0 + ($(document).scrollTop() * 0.0015)});
-			});
-		</script>
-
-		<script type="text/javascript">
-			var colors = ["#9c51ba", "#ff62ff", "#ebd527", "#17e4f7", "#cba2c0"];
-			var colorsText = ["#000000",  "#f76fcd", "#000000","#f531f6", "#d8452e"];
-			var i = 0;
-			// $("body").css("background-color","#cba2c0");
-			// function changeColor()
-			// {
-			//     i++;
-			//     i=i%5;
-			//     $("body").animate({backgroundColor: colors[i]},5000);
-			//     setTimeout(changeColor,0);
-			// }
-			function changeColorText()
-			{
-			    i++;
-			    i=i%5;
-			    $("#feature-header").animate({color: colorsText[i]},5000);
-			    setTimeout(changeColorText,0);
-			}
-			$( document ).ready(changeColor());
-			$( document ).ready(changeColorText());
-		</script>
-
-		<script type="text/javascript">
-			(function() {
-			  var Blip, blips, c, ch, clear, ctx, cw, divider, globalTick, initialBlips, pi2, rand, run;
-			  c = document.getElementById('c');
-			  ctx = c.getContext('2d');
-			  divider = 12;
-			  cw = c.width = window.innerWidth / divider;
-			  ch = c.height = window.innerHeight / divider;
-			  pi2 = Math.PI * 2;
-			  blips = [];
-			  initialBlips = 30;
-			  globalTick = 0;
-			  rand = function(min, max) {
-			    return Math.floor((Math.random() * (max - min + 1)) + min);
-			  };
-			  Blip = function(x, y) {
-			    this.x = x;
-			    this.y = y;
-			    this.r = .1;
-			    this.rGrowthBase = 1;
-			    this.rGrowth = this.rGrowthBase;
-			    this.rMax = (cw + ch) / 7;
-			    return this.alpha = 1;
-			  };
-			  Blip.prototype.update = function(i) {
-			    var percent;
-			    percent = (this.rMax - this.r) / this.rMax;
-			    this.rGrowth = .1 + this.rGrowthBase * percent;
-			    this.r += this.rGrowth;
-			    this.alpha = percent;
-			    if (this.r > this.rMax) {
-			      return blips.splice(i, 1);
-			    }
-			  };
-			  Blip.prototype.render = function(i) {
-			    ctx.beginPath();
-			    ctx.arc(this.x, this.y, this.r, 0, pi2, false);
-			    ctx.fillStyle = 'hsla(' + rand(globalTick - 80, globalTick + 80) + ', 50%, 1%, ' + this.alpha + ')';
-			    return ctx.fill();
-			  };
-			  clear = function() {
-			    ctx.globalCompositeOperation = 'destination-out';
-			    ctx.fillStyle = 'hsla(0, 0%, 0%, .01)';
-			    ctx.fillRect(0, 0, cw, ch);
-			    return ctx.globalCompositeOperation = 'lighter';
-			  };
-			  run = function() {
-			    var i;
-			    window.requestAnimationFrame(run, c);
-			    clear();
-			    i = blips.length;
-			    while (i--) {
-			      blips[i].update(i);
-			    }
-			    i = blips.length;
-			    while (i--) {
-			      blips[i].render(i);
-			    }
-			    blips.push(new Blip(rand(0, cw), rand(0, ch)));
-			    return globalTick++;
-			  };
-			  $(window).on('resize', function() {
-			    cw = c.width = window.innerWidth / divider;
-			    return ch = c.height = window.innerHeight / divider;
-			  });
-			  window.requestAnimationFrame || (window.requestAnimationFrame = window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback, element) {
-			    return window.setTimeout(function() {
-			      return callback(+new Date());
-			    }, 1000 / 60);
-			  });
-			  run();
-			}).call(this);
-		</script>
+		<script src="scripts/rain.js"></script>
+		<script src="scripts/scroll-animator.js"></script>
+		<script src="scripts/change-text-color.js"></script>
+		<script src="scripts/color-cloud.js"></script>
 	</body>
 </html>

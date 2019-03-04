@@ -6,7 +6,7 @@ html,body{
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Press Start 2P', cursive;
-	background-image: url("vaporwave.jpg");
+	background-image: url("../img/vaporwave.jpg");
 	background-repeat: repeat-x;
     background-size: auto 100%;
     background-position: center top;
