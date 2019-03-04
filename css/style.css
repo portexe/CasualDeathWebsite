@@ -218,7 +218,6 @@ canvas {
 	z-index: 99999 !important;
 }
 @media screen and (min-width: 1px) and (max-width: 550px){
-
     #profpic{
     	width: 40%;
     	margin-left: 22.5%;
@@ -235,12 +234,6 @@ canvas {
     .palmtrees-small {
         display: none;
     }
-/*	.palmtrees{
-		display: block;
-	}
-	.palmtrees-reverse{
-		display: block;
-	}*/
 	.drop {
 	  background-color: #02C0F8;
 	  position: fixed;
@@ -252,17 +245,11 @@ canvas {
         font-size: 3.8vw;
     }
 }
-@media screen and (min-height: 1px) and (max-height: 380px){ 
+@media screen and (min-height: 1px) and (max-height: 390px){ 
     #profpic {
         display: none;
     }
     .palmtrees-small {
         display: none;
     }
-    /* #palmtree-set-right {
-        display: none;
-    }
-    #palmtree-set-left {
-        display: none;
-    } */
 }
