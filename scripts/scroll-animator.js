@@ -30,8 +30,8 @@ $(window).scroll(function() {
     var opacity = 1 - (wHeight/scrollTop);
     
     $("#profpic").css({"bottom": 0 - scrollTop, "transition": "none"});
-    $("#palmtree-set1").css({"left": 0 - scrollTop});
-    $("#palmtree-set2").css({"right": 0 - scrollTop});
+    $("#palmtree-set-left").css({"left": 0 - scrollTop});
+    $("#palmtree-set-right").css({"right": 0 - scrollTop});
 
     var val = $(document).scrollTop() * 0.0015;
 
