@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@font-face {
+    font-family: 'Hell'; /*a name to be used later*/
+    src: url('../fonts/hel.otf'); /*URL to font*/
+}
 
 html,body{
 	height: 100%;
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Press Start 2P', cursive;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-family: 'Hell';
+    font-size: 32px;
 	background-image: url("../img/vaporwave.jpg");
 	background-repeat: repeat-x;
     background-size: auto 100%;
     background-position: center top;
     background-attachment: fixed;
+    background-color: black;
+    font-weight: bolder;
 }
 #header {
     z-index: 10;
@@ -26,7 +34,8 @@ html,body{
 }
 #toolbar .toolbar-link {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 #toolbar .toolbar-link a {
     text-decoration: none;
@@ -135,10 +144,10 @@ canvas {
 
 #link-buttons{
 	top: 0;
-	width: 70%;
-	margin-left: 15%;
+    width: 100%;
 	text-align: center;
-	z-index: 9999999 !important;
+    z-index: 9999999 !important;
+    border-radius: 25px;
 }
 #link-buttons img{
 	z-index: 99 !important;
@@ -170,8 +179,9 @@ canvas {
 	z-index: 99 !important;
 }
 #content-area{
+    margin-top: -100px;
 	width: 100%;
-	height: calc(100% + 400px);
+	height: calc(100% - 100px);
 	text-align: center;
 	z-index: 9999 !important;
 }
