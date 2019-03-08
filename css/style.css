@@ -13,10 +13,16 @@ html,body{
     font-family: 'Hell';
     font-size: 32px;
 	background-image: url("../img/vaporwave.jpg");
-	background-repeat: repeat-x;
-    background-size: auto 100%;
+	/* background-repeat: repeat-x;
+    background-size: auto 100%; */
     background-position: center top;
     background-attachment: fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
     background-color: black;
     font-weight: bolder;
 }
